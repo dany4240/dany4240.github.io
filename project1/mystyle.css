@@ -6,6 +6,8 @@ html {
     justify-content:center;
 }
 
+
+
 body {
     background-image:linear-gradient(-45deg,black,indigo,black,indigo,black,indigo,black);
     color:white;
@@ -38,7 +40,7 @@ li:first-child {
     color: grey;
     font-weight: bold;
     font-size: 25px;
-    margin-bottom:30px;
+    margin-bottom:20px;
     text-decoration:none;
 
 }
@@ -46,6 +48,7 @@ li:first-child {
 a {
     color:slateblue;
     font-size:20px;
-    text-decoration: none;
-    line-height: 25px;
+    font-family:'Courier New', Courier, monospace;
+    text-decoration:solid;
+    line-height: 30px;
 }
