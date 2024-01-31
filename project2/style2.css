@@ -8,7 +8,7 @@ html {
 body {
     display:flex;
     /* background-image:linear-gradient(grey,grey,black); */
-    background-image: url(backgrou-nd.gif);
+    background-image: url(background.gif);
     background-size: cover;
     color:white;
     align-items: center;
