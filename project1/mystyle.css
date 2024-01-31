@@ -7,26 +7,32 @@ html {
 }
 
 
-
 body {
-    background-image:linear-gradient(-45deg,black,indigo,black,indigo,black,indigo,black);
-    color:white;
+    background:url(background.gif);
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color:white;
     justify-content: center;
 }
-
-img {
-    margin-left:70px;
-    height: 350px;
-    width: 700px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
 
 
 nav {
     display:flex;
-    margin-top: 45px;
-    margin-left: 80px;
+    margin-bottom:380px;
+    backdrop-filter: blur(15px);
+    background-color: rgba(255,255,255,0.1);
+    background-attachment:fixed;
+    background-position:center;
+    justify-content: center;
+    align-items: center;
+    width:900px;
+    height:200px;
+    border-radius:70px 20px 70px 20px;
 }
+
+
 
 ul {
     list-style-type: none;
@@ -37,7 +43,7 @@ li {
 }
 li:first-child {
     display: inline-block;
-    color: grey;
+    color: white;
     font-weight: bold;
     font-size: 25px;
     margin-bottom:20px;
@@ -46,9 +52,54 @@ li:first-child {
 }
 
 a {
-    color:slateblue;
+    color:#f7af43;
     font-size:20px;
     font-family:'Courier New', Courier, monospace;
     text-decoration:solid;
     line-height: 30px;
 }
+
+a:hover{
+    color:white;
+    font-style:italic;
+}
+
+/* @media only screen and (max-width: 400px) {
+    
+img {
+    display:block;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height:500px;
+}
+
+  .flipbox {
+    background-color: transparent;
+    perspective:1000px;
+    margin-right:1400px;
+}
+
+.inner-flipbox {
+    position:relative;
+    width:100%;
+    height:100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flipbox:hover .inner-flipbox {
+    transform:rotateY(-180deg);
+}
+
+.front-flipbox,.back-flipbox {
+    position:absolute;
+    width:100%;
+    height:100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.back-flipbox {
+    transform:rotateY(-180deg);
+}
+
+  } */
