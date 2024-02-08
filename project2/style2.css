@@ -7,10 +7,10 @@ html {
 
 body {
     display:flex;
-    /* background-image:linear-gradient(grey,grey,black); 
-    background-image: url(background.gif);
+    /* background-image:linear-gradient(grey,grey,black);  */
+    background-image: url(Anime gif scenery.gif);
     background-size: cover;
-    color:white; */
+    color:white; 
     align-items: center;
 }
 
