@@ -1,8 +1,16 @@
+@font-face {
+    font-family: 'custom-font';
+    src: url('fonts/IndieFlower-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
 html {
     align-items: center;
     display: flex;
     height: 100%;
     justify-content:center;
+    font-family: 'custom-font',serif;
 }
 
 body {
@@ -68,20 +76,19 @@ nav {
     backdrop-filter:blur(5px);
     background:rgba(255,255,255, 0.2);
     border-radius: 15px;
-    width: 280px;
-    height:570px;
-    justify-content: center;
+    width: 320px;
+    height:630px;
 }
 
 ul {
     list-style-type: none;
-    margin-bottom: 0;
-    align-items: left;
+    transition:1s;
 }
 
 ul:hover {
     background-color: rgba(255,255,255,0.5);
     border-radius: 20px;
+    transition: 1s;
 }
 
 li {
@@ -91,13 +98,14 @@ li {
 
 
 li:first-child {
+    font-family: 'Courier New', Courier, monospace;
     display: inline-block;
     color: white;
     font-weight: bold;
     font-size: 25px;
     text-decoration:none;
     font-style:italic;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
     text-decoration: underline;
 
 }
@@ -106,13 +114,13 @@ a {
     color: black;
     font-size:20px;
     text-decoration: none;
-    align-items: center;                             
+    align-items: left;                             
 }
 
 a:hover {
     font-weight: bold;
     border-radius: 20px;
-    padding: 10px;
-    background-color: rgba(255,255,255,0.1);
+    padding: 6px;
+    background-color: rgba(190, 127, 212,0.5);
     color: white;
 }
