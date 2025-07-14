@@ -8,3 +8,5 @@ you can use it if you want! just add this link
 https://dany4240.github.io/project2/index2.html
 
 ```
+
+feel free to add issue to suggest features to add :)
