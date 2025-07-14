@@ -1,19 +1,20 @@
 
+
 html {
     align-items: center;
     display: flex;
     height: 100%;
     justify-content:center;
+    font-weight: 300;
+
 }
 
 
 body {
-    background:url(background.gif);
-    background-size:cover;
-    background-position: center center;
+    background:url(https://i.pinimg.com/736x/a7/2b/ee/a72bee3d09a22e22c5d488f8130e0195.jpg);
+    background-size:contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-color:black;
     justify-content: center;
 }
 
@@ -21,7 +22,7 @@ body {
 nav {
     background-color: rgba(5,55,1,0.1);
     width: 300px;
-    border-radius: 70px 0 0 20px;
+    border-radius: 20px;
     backdrop-filter: blur(1px);
     text-justify: distribute;
     
@@ -32,37 +33,44 @@ nav {
 ul {
     list-style-type: none;
     position: relative;
-    top: 60px;
-    left: 25px;
-    border: 1px solid black;
+    top: 5px;
+    left: 40px;
     width: 200px;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 13px;
+    border-radius: 12px;
+    margin: 15px 0;
+    background: rgba(69, 69, 69, 0.32);
+
+
 }
 
 li {
-    line-height: 20px;
+    line-height: 5px;
+    font-size: 0.2px;
+    
 }
 li:first-child {
     display: inline-block;
-    color: white;
-    font-weight: bold;
+    color: #f0f0f0;
     font-size: 25px;
     margin-bottom:20px;
-    text-decoration:none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 
 }
 
 a {
     color:#f7af43;
     font-size:20px;
-    font-family:'Courier New', Courier, monospace;
     text-decoration:solid;
     line-height: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+
 }
 
 a:hover{
-    color:white;
+    color:#f0f0f0;
     font-style:italic;
 }
 
@@ -71,13 +79,14 @@ div {
 }
 
 #mainContent {
-    backdrop-filter: blur(5px);
-    background-color: rgba(255,255,255,0.1);
-    background-attachment:fixed;
-    background-position:center;
-    border-radius:70px 20px 70px 20px;
+    border-radius: 20px;
     width:900px;
-    height:800px;
+    height:500px;
+    background: rgba(255, 255, 255, 0.32);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(8.4px);
+    border: 1px solid rgba(255, 255, 255, 0.62);
 }
 
 #dateDiv {
@@ -86,10 +95,6 @@ div {
 }
 
 #timeAndDateDiv {
-    backdrop-filter: blur(5px);
-    background-color: rgba(2,5,55,0.1);
-    color: white;
-    border-radius: 10px;
     display: block;
     position: relative;
     margin-top: 50px;
@@ -99,20 +104,51 @@ div {
     height: 90px;
     padding: 10px 10px;
     transition:1s;
+    color: #2b2b2b;
+    font-family: 'Inter', sans-serif;
+
 }
 
-#timeAndDateDiv:hover {
-    background-color: rgba(1,1,1,0.5);
-    backdrop-filter: blur(5px);
-    transition:1s;
-}
+
 
 #nameDisplay {
     position: absolute;
-    left: 420px;
+    left: 380px;
     top: 200px;
     font-size: 60px;
+    background: linear-gradient(rgba(26,19,28,0.7), rgba(114,73,66,0.7), rgba(145,129,156,0.7));
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    height: 250px;
+    width: 450px;
+    font-family: 'Inter', sans-serif;
+
     
+    
+}
+
+#searchBar {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    
+}
+
+#searchBar input {
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+
+}
+
+#quote {
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    width: 300px;
 }
 
 

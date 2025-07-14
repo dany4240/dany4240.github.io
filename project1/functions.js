@@ -1,4 +1,5 @@
 setInterval(showTime, 1000);
+
 function showTime() {
     let time = new Date();
     let hour = time.getHours();
@@ -48,3 +49,19 @@ function date() {
 
 showTime();
 date();
+
+ const quotes = [
+  { text: "Code is like humor. When you have to explain it, it’s bad.", author: "Cory House" },
+  { text: "Simplicity is the soul of efficiency.", author: "Austin Freeman" }
+];
+    
+function showQuote(){
+    let randomIndex = Math.floor(Math.random() * quotes.length);
+    let quote = quotes[randomIndex];
+
+    $("#quote").html(`"${quote.text}"`);
+}
+
+$(document).ready(function() {
+    showQuote();
+});
