@@ -6,9 +6,20 @@
     <title>dany.sh</title>
 
     <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+</style>
 </head>
-<body>
-    <a style="color:white; text-decoration:underline; font-size:small;" href="https://www.instagram.com/initial__clip/?hl=en">Credit: Initial Clip (Instagram)</a>
+<div id="searchBar">
+    <form action="https://www.google.com/search" method="get">
+        <input type="text" name="q" placeholder="Search Google...">
+    </form>
+</div>
+
+
+<body >
    <!--<div class="flipbox">
         <div class="inner-flipbox">
             <div class="front-flipbox">
@@ -24,32 +35,27 @@
 
     <!-- <h1 style="font-size:45px; margin-left:125px; margin-top:50px;">Welcome to the homepage.</h1> -->
 
-   <div id="mainContent">
+   <div id="mainContent"  >
      <nav>
-        <ul>
+        <ul >
             <li>ESSENTIALS</li>
             <li><a href="https://youtube.com">Youtube</a></li>
             <li><a href="https://pinterest.com">Pinterest</a></li>
             <li><a href="https://ulearn.utem.edu.my/hub/">ULearn</a></li>
         </ul>
-        <ul>
+        <ul >
             <li>DEVELOPMENT</li>
             <li><a href="https://leetcode.com">Leetcode</a></li>
             <li><a href="https://github.com">Github</a></li>
             <li><a href="https://w3chools.com">W3Schools</a></li>
         </ul>
-        <ul>
+        <ul >
             <li>SOCIAL</li>
             <li><a href="https://www.instagram.com">Instagram</a></li>
             <li><a href="https://www.reddit.com">Reddit</a></li>
-            <li><a href="https://twitter.com">twitter</a></li>
+            <li><a href="https://threads.net">Threads</a></li>
         </ul>
-        <ul>
-            <li>GAMES</li>
-            <li><a href="https://monkeytype.com">Monkeytype</a></li>
-            <li><a href="https://zty.pe.com">ZType</a></li>
-            <li><a href="https://steampowered.com">Steam</a></li>
-        </ul>
+        
     </nav>
 
    
@@ -60,7 +66,7 @@
     </div>'
     
     <div id="nameDisplay">
-        root@acappo
+        <p id="quote"></p>
     </div>
 
     <div id="imagePlaceholder">
@@ -70,6 +76,8 @@
    </div>
 
    <script src="functions.js"></script>
+
+   
     
 </body>
 </html>
