@@ -44,24 +44,40 @@ function date() {
     month = month < 10 ? "0" + month : month;
 
     let currentDate =  day + "/" + month + "/" + year;
+    prayerDate = day + "-" + month + "-" + year;
     document.getElementById("dateDiv").innerHTML = currentDate;
 }
 
 showTime();
 date();
 
- const quotes = [
-  { text: "Code is like humor. When you have to explain it, it’s bad.", author: "Cory House" },
-  { text: "Simplicity is the soul of efficiency.", author: "Austin Freeman" }
-];
+const quote_api_url = 'https://corsproxy.io/?https://zenquotes.io/api/today';
     
-function showQuote(){
-    let randomIndex = Math.floor(Math.random() * quotes.length);
-    let quote = quotes[randomIndex];
+async function showQuote(url){
+    const response = await fetch(url);
+    var data = await response.json();
+    console.log(data);
 
-    $("#quote").html(`"${quote.text}"`);
+    const quote = data[0];
+
+    document.getElementById("quote").innerHTML = `${quote.h}`;
+}
+
+const prayer_times_api = `https://api.aladhan.com/v1/timingsByAddress/${prayerDate}?address=Malacca`;
+
+async function showPrayerTime(url){
+    const response = await fetch(url);
+    var data = await response.json();
+    console.log(data);
+
+    document.getElementById("Subuh").innerHTML = `${data.data.timings.Fajr}`;
+    document.getElementById("Zuhur").innerHTML = `${data.data.timings.Dhuhr}`;
+    document.getElementById("Asar").innerHTML = `${data.data.timings.Asr}`;
+    document.getElementById("Maghrib").innerHTML = `${data.data.timings.Maghrib}`;
+    document.getElementById("Isyak").innerHTML = `${data.data.timings.Isha}`;
 }
 
 $(document).ready(function() {
-    showQuote();
+    showQuote(quote_api_url);
+    showPrayerTime(prayer_times_api);
 });

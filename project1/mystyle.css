@@ -23,25 +23,25 @@ nav {
     background-color: rgba(5,55,1,0.1);
     width: 300px;
     border-radius: 20px;
-    backdrop-filter: blur(1px);
-    text-justify: distribute;
-    
+    backdrop-filter: blur(1px);   
+    text-align: center; 
 }
 
 
 
 ul {
+    display: inline-block;
+    text-align: left;
     list-style-type: none;
-    position: relative;
-    top: 5px;
-    left: 40px;
     width: 200px;
-    padding: 13px;
+    padding: 20px;
     border-radius: 12px;
     margin: 15px 0;
     background: rgba(69, 69, 69, 0.32);
+}
 
-
+ul:first-child{
+    margin-top: 30px;
 }
 
 li {
@@ -81,7 +81,7 @@ div {
 #mainContent {
     border-radius: 20px;
     width:900px;
-    height:500px;
+    height:600px;
     background: rgba(255, 255, 255, 0.32);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8.4px);
@@ -112,11 +112,12 @@ div {
 
 
 #nameDisplay {
+    display: block;
     position: absolute;
     left: 380px;
     top: 200px;
     font-size: 60px;
-    background: linear-gradient(rgba(26,19,28,0.7), rgba(114,73,66,0.7), rgba(145,129,156,0.7));
+    background: linear-gradient(rgba(26,19,28,0.7), rgba(244, 252, 198, 0.7), rgba(214, 212, 216, 0.7));
     backdrop-filter: blur(5px);
     border-radius: 10px;
     height: 250px;
@@ -146,9 +147,28 @@ div {
 
 #quote {
     display: block;
-    margin: auto;
-    font-size: 20px;
-    width: 300px;
+    margin: 70px 50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+}
+
+#prayerTimes {
+    background-color: rgba(255, 255, 255, 0.4);
+    display: block;
+    position: absolute;
+    left: 380px;
+    top: 480px;
+    width: 50%;
+    font-family: 'Inter', sans-serif;
+    backdrop-filter: blur(7px);
+}
+
+table{
+    width: 100%;
+}
+td{
+    text-align: center;
 }
 
 
