@@ -5,7 +5,7 @@ P/S : all this website is just a startpage for browser, nothing else.
 
 you can use it if you want! just add this link
 ```
-https://dany4240.github.io/project2/index2.html
+https://dany4240.github.io/projectFolderName/index.html
 
 ```
 
